@@ -43,14 +43,6 @@
             "value": "yes",
             "required": false
         },
-        "HEROKU_APY_KEY": {
-            "description": "insert your Heroku API key (this is optional)",
-            "required": false
-        },
-        "HEROKU_APP_NAME": {
-            "description": "insert your Heroku APP NAME (this is optional)",
-            "required": false
-        },
         "SESSION_ID": {
             "description": "put your session ID, the code you receive after scanning the QR code",
             "value": "",
