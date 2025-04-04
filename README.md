@@ -20,7 +20,7 @@ Zokou is a multi-device bot designed to enhance your WhatsApp conversations with
 
 ## How to Get Zokou 🛠️
 
-1. Click on **[Fork](https://github.com/Luffy2ndAccount/zokou-english-v2/fork)** to copy the repo to your GitHub account. Don’t forget to add a star 🌟 to encourage the developers.
+1. Click on **[Fork](https://github.com/luffy8979/Zokou-MD-english/fork)** to copy the repo to your GitHub account. Don’t forget to add a star 🌟 to encourage the developers.
 
 2. Obtain a bot session: 
 
@@ -30,7 +30,7 @@ Zokou is a multi-device bot designed to enhance your WhatsApp conversations with
 3. Deploy Zokou
 - **Heroku Deployment:**
 1. If you don’t have a **Heroku** account, click [**here**](https://id.heroku.com/login) to create one.
-2. Click [**here**](https://dashboard.heroku.com/new?template=https://github.com/Luffy2ndAccount/zokou-english-v2) to deploy the bot on **Heroku**.
+2. Click [**here**](https://dashboard.heroku.com/new?template=https://github.com/luffy8979/Zokou-MD-english) to deploy the bot on **Heroku**.
 
 - **Koyeb Deployment:**
 1. If you don’t have a **Koyeb** account, click [**here**](https://app.koyeb.com/auth/signup) to create one.
@@ -75,56 +75,7 @@ AUTO_REACT_MESSAGE=no
     
 - **Github Deployement**
 
-  1. Fork The Repo
-  2. Edit the file `exemple_de_set.env` to `set.env` and put your session_ID in
-  3. create a new file `.github/workflows/deploy.yml` and put this content in :
-
-```yml
-name: Node.js CI
-
-on:
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
-  schedule:
-    - cron: '0 */4 * * *'
-
-jobs:
-  build:
-
-    runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [20.x]
-
-    steps:
-    - name: Checkout repository
-      uses: actions/checkout@v3
-
-    - name: Set up Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: ${{ matrix.node-version }}
-
-    - name: Install ffmpeg
-      run: |
-        sudo apt-get update
-        sudo apt-get install -y ffmpeg
-
-    - name: Install dependencies
-      run: |
-        npm install -g pm2
-        npm install
-
-    - name: Start application with timeout
-      run: |
-        timeout 14520s npm run zokou
-
- ```
+Sorry Removed , Suggest you to deploy on panel instead
 
 ## Contributions 🤝
 
