@@ -1,0 +1,6 @@
+services:
+  - type: worker
+    name: zokou-worker
+    build:
+      dockerfile: Dockerfile
+    command: npm run zokou
